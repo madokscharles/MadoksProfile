@@ -1,0 +1,316 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #FFE4E1;
+    background-color: #000000;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #FF69B4;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 2rem;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.3rem;
+    color: #FF69B4;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+hr {
+    width: 15%;
+    color: #FFE4E1;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    color: #FF69B4;
+}
+
+/* Home / Cover Section Styles */
+.cover-container {
+    position: relative;
+    top: -32px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.cover-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover-text {
+    color: #FFFFFF;
+    padding: 2rem;
+    max-width: 40%;
+    z-index: 1;
+}
+
+.cover-text h1 {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.cover-text .job-title {
+    font-size: 1.5rem;
+    color: #FF69B4;
+}
+
+.cover-text .hello {
+    margin-bottom: 10px;
+}
+
+.cover-text .summary {
+    font-size: 1rem;
+}
+
+/* My Projects Styles */
+#projects {
+    align-items: center;
+    text-align: center;
+}
+
+#projects p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #FFE4E1;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.more-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #FF69B4;
+    color: #000000;
+    border: 1px solid #FF69B4;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.more-button:hover {
+    background-color: #333333;
+    color: #FF69B4;
+    border: 1px solid #333333;
+    transform: translateY(-1px);
+}
+
+/* About Me Styles */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-text {
+    max-width: 60%;
+    color: #FFE4E1;
+}
+
+.about-text h2, .about-text h3 {
+    color: #FF69B4;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.about-image {
+    width: 35%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Me Styles */
+#contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a1a;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-details p, .contact-details a {
+    color: #FFE4E1;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link .fa-brands {
+    font-size: 2rem;
+    transition: transform 0.3s;
+    color: #FF69B4;
+    padding: 0 20px;
+}
+
+.social-link .fa-brands:hover {
+    transform: scale(1.1);
+    color: #FFB6C1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FFB6C1;
+    color: #333333;
+    text-align: center;
+    padding: 1rem;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+/* Responsive Styling for Mobile View */
+@media (max-width: 768px) {
+    .cover-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .cover-image {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        z-index: -1;
+        filter: blur(8px);
+    }
+
+    .cover-text {
+        max-width: 70%;
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+
+    .cover-text h1 {
+        font-size: 2.7rem;
+    }
+
+    .cover-text .summary {
+        font-size: 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text, .about-image {
+        max-width: 100%;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+}
