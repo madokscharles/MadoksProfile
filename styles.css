@@ -403,11 +403,11 @@ footer {
 }
 
 .post-content a {
-    color: #6F4E37;
+    color: #FFB6C1;
 }
 
 .post-content a:hover {
-    color: #FF69B4;
+    color: #241313;
 }
 
 .post-author {
@@ -425,6 +425,86 @@ footer {
 
 .post-author p {
     color: #333;
+}
+
+/*Resume Page*/
+#resume {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-header h1 {
+    font-size: 2.2em;
+    color: #333;
+}
+
+.resume-header p {
+    font-size: 1em;
+}
+
+.resume-header a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.resume-header a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+#resume div {
+    margin-bottom: 20px;
+}
+
+#resume h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #0073e6;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+}
+
+.skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.experience .job {
+    margin-bottom: 15px;
+}
+
+.experience h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+  
+.experience p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.education p,
+.certificates p {
+  margin-bottom: 10px;
+  font-size: 1em;
 }
 
 /* Responsive Styling for Mobile View */
@@ -489,6 +569,14 @@ footer {
 
     .blog-cover-text h1 {
         font-size: 2rem;
+    }
+
+    .resume-header h1 {
+        font-size: 1.8em;
+    }
+
+    #resume h2 {
+        font-size: 1.5em;
     }
 
 }
